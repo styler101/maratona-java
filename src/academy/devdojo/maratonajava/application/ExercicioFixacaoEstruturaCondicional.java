@@ -12,7 +12,6 @@ public class ExercicioFixacaoEstruturaCondicional {
       Scanner scanner = new Scanner(System.in);
       System.out.println("Please enter with your salary");
       double salary = scanner.nextDouble();
-      double result;
       double impost;
 
       if( salary <= 34.712){
