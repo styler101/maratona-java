@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.application;
+package academy.devdojo.maratonajava.introducao;
 
 import java.util.Locale;
 import java.util.Scanner;

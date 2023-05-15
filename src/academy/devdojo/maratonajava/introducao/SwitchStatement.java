@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.application;
+package academy.devdojo.maratonajava.introducao;
 
 public class SwitchStatement {
 

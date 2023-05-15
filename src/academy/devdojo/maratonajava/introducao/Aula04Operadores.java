@@ -1,6 +1,4 @@
-package academy.devdojo.maratonajava.application;
-
-import java.util.Scanner;
+package academy.devdojo.maratonajava.introducao;
 
 public class Aula04Operadores {
 
