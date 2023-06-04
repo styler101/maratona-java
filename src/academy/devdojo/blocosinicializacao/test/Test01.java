@@ -3,30 +3,16 @@ package academy.devdojo.blocosinicializacao.test;
 
 import academy.devdojo.blocosinicializacao.dominio.Anime;
 
-import java.util.Scanner;
+// classes abstratas não podem ser instânciadas
+// classes final não podem ser herdadas.
 
 public class Test01 {
 
   public static void main(String[] args) {
-      Scanner scanner = new Scanner(System.in);
-      System.out.println("Entre com o nome do anime");
-      String name = scanner.nextLine();
-      System.out.println("Quantos episodios o anime " + name + "possuí ? ");
-      int quantity = scanner.nextInt();
-      int[] episodios = new int[quantity];
-      for(int i = 0; i < episodios.length; i++){
-        episodios[i] = i;
-      }
+    Anime anime = new Anime();
+    Anime anime2 = new Anime();
+    Anime anime3 = new Anime();
 
-      System.out.println("Episodios");
-      Anime anime = new Anime();
-      anime.setNome(name);
-      anime.setEpisodios(episodios);
-
-      anime.showEpisodes();
-
-
-      scanner.close();
   }
 
 }

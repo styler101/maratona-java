@@ -1,18 +1,17 @@
 package academy.devdojo.blocosinicializacao.dominio;
 
-public class Anime {
+public  class Anime {
 
   private String nome;
-  private int[] episodios;
+  private static  int[] episodios;
 
   public Anime(){}
 
   public Anime(String nome, int[] episodios){
     this.nome = nome;
-    this.episodios = episodios;
   }
 
-  public void showEpisodes(){
+  public static void showEpisodes(){
     for(int item: episodios){
       System.out.println(item + 1);
     }
@@ -31,6 +30,8 @@ public class Anime {
   }
 
   public void setEpisodios(int[] episodios) {
-    this.episodios = episodios;
+    episodios = episodios;
   }
+
+
 }
