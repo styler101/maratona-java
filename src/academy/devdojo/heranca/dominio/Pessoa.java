@@ -2,10 +2,10 @@ package academy.devdojo.heranca.dominio;
 
 public class Pessoa {
 
-  private String nome;
-  private String cpf;
+  protected String nome;
+  protected String cpf;
 
-  private Endereco endereco;
+  protected Endereco endereco;
   public Pessoa(){};
 
   public Pessoa(String nome, String cpf, Endereco endereco ){

@@ -1,5 +1,6 @@
 package academy.devdojo.heranca.dominio;
 
+// Atributos protected vão dar acesso a qualquer subclasse da super classe no mesmo pacote.
 public class Funcionario extends Pessoa {
   private double salario;
 
@@ -8,6 +9,10 @@ public class Funcionario extends Pessoa {
     System.out.println("Informações do Funcionário");
     super.imprime();
     System.out.println("Salário: " + salario);
+  }
+
+  public void relatorioPagamento(){
+    System.out.println("Eu: " + this.nome + ", recebi o salário de " + this.salario);
   }
   public Funcionario(double salario) {
     this.salario = salario;

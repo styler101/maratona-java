@@ -9,7 +9,6 @@ public class HerancaTest01 {
       Endereco endereco = new Endereco("Rua X", "393939390-91");
       Pessoa pessoa = new Pessoa("Lucas", "XXX.XXX.XX-XX", endereco);
       Funcionario gerente = new Funcionario("Jorge", "XXX.XXX.XXX-XX", endereco,3010L);
-      pessoa.imprime();
-      gerente.imprime();
+      gerente.relatorioPagamento();
     }
 }
