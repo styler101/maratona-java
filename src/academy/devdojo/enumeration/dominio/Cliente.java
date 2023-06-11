@@ -1,38 +1,54 @@
 package academy.devdojo.enumeration.dominio;
 
-import academy.devdojo.enumeration.dominio.enums.Payment;
-import academy.devdojo.enumeration.dominio.enums.TipoCliente;
-import academy.devdojo.enumeration.implementation.ClienteImplementation;
+import academy.devdojo.enumeration.enums.TipoCliente;
+import academy.devdojo.enumeration.enums.TipoPagamento;
 
-public class Cliente implements ClienteImplementation {
+public class Cliente {
+
+  private TipoPagamento tipoPagamento;
+  private TipoCliente tipoCliente;
+
   private String nome;
-  private TipoCliente tipo;
 
-  private Payment pagamento;
-  public Cliente() {
-  }
+  public Cliente(){};
 
-  public Cliente(String nome, TipoCliente tipo) {
+
+
+  public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento){
     this.nome = nome;
-    this.tipo = tipo;
-    System.out.println("Pessoa Cadastrada com sucesso!");
-
+    this.tipoCliente = tipoCliente;
+    this.tipoPagamento =tipoPagamento;
   }
 
-  @Override
+  public TipoCliente getTipoCliente(){
+    return tipoCliente;
+  }
+
+  public void setTipoCliente(TipoCliente tipoCliente){
+    this.tipoCliente = tipoCliente;
+  }
   public String getNome() {
     return nome;
   }
-  @Override
+
   public void setNome(String nome) {
     this.nome = nome;
   }
-  @Override
-  public TipoCliente getTipo() {
-    return tipo;
+
+  public TipoPagamento getTipoPagamento() {
+    return tipoPagamento;
   }
+
+  public void setTipoPagamento(TipoPagamento tipoPagamento) {
+    this.tipoPagamento = tipoPagamento;
+  }
+
   @Override
-  public void setTipo(TipoCliente tipo) {
-    this.tipo = tipo;
+  public String toString() {
+    return "Cliente{" +
+      "tipoPagamento=" + tipoPagamento +
+      ", tipoCliente=" + tipoCliente.getValor() +
+      ", nome='" + nome + '\'' +
+      '}';
   }
 }
