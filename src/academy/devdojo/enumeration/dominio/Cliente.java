@@ -10,23 +10,24 @@ public class Cliente {
 
   private String nome;
 
-  public Cliente(){};
-
-
-
-  public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento){
-    this.nome = nome;
-    this.tipoCliente = tipoCliente;
-    this.tipoPagamento =tipoPagamento;
+  public Cliente() {
   }
 
-  public TipoCliente getTipoCliente(){
+
+  public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
+    this.nome = nome;
+    this.tipoCliente = tipoCliente;
+    this.tipoPagamento = tipoPagamento;
+  }
+
+  public TipoCliente getTipoCliente() {
     return tipoCliente;
   }
 
-  public void setTipoCliente(TipoCliente tipoCliente){
+  public void setTipoCliente(TipoCliente tipoCliente) {
     this.tipoCliente = tipoCliente;
   }
+
   public String getNome() {
     return nome;
   }

@@ -13,4 +13,9 @@ public class Funcionario implements EmployeeRule {
   public double calcSalary(double salary) {
     return salary * 0.5;
   }
+
+  @Override
+  public void checkValues() {
+    EmployeeRule.super.checkValues();
+  }
 }

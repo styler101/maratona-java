@@ -12,6 +12,7 @@ public class Main {
 
     TipoCliente tipoCliente = TipoCliente.tipoClientePorNomeRelatorio("PESSOA FISÍCA");
     System.out.println(tipoCliente);
+
   }
 
 }
